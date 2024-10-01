@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .parallax {
+            background-image: url('https://source.unsplash.com/random/1600x900');
+            height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .content {
+            height: 500px;
+            padding: 20px;
+            background: white;
+            text-align: center;
+        }
+        .content p {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax"></div>
+    <div class="content">
+        <h1>Scroll Down</h1>
+        <p>This is a parallax effect example. The background image stays fixed while the content scrolls.</p>
+    </div>
+    <div class="parallax"></div>
+</body>
+</html>
